@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import styled from "styled-components";
+
 import Topbar from "./components/topbar/Topbar";
-
 import Sidebar from './components/sidebar/Sidebar';
+import Home from "./pages/home/Home";
 
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
 `;
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Topbar />
       <Container>
         <Sidebar />
+        <Home />
       </Container>
     </Fragment>
   );

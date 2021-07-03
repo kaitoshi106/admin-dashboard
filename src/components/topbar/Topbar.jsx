@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Language, NotificationsNone, Settings } from "@material-ui/icons";
 
-const TopbarSection = styled.section`
+const TopbarSection = styled.nav`
   width: 100%;
   height: 50%;
   background-color: #fff;
@@ -53,10 +53,10 @@ const TopIconBadge = styled.span`
 `;
 
 const TopAvatar = styled.img`
-width: 40px;
-height: 40px;
-border-radius: 50%;
-cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
 `;
 
 const Topbar = () => {
@@ -78,7 +78,10 @@ const Topbar = () => {
           <TopbarIconContainer>
             <Settings />
           </TopbarIconContainer>
-          <TopAvatar src="https://images.pexels.com/photos/6533889/pexels-photo-6533889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="minhtran" />
+          <TopAvatar
+            src="https://images.pexels.com/photos/6533889/pexels-photo-6533889.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            alt="avatar img"
+          />
         </TopRight>
       </TopbarWrapper>
     </TopbarSection>
